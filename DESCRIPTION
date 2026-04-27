@@ -15,6 +15,6 @@ Description: A collection of color palettes inspired by the visual aesthetic
     (Karthik Ram, Hadley Wickham), adapted with original palettes derived 
     from the cinematography of Hereditary, Midsommar, Beau Is Afraid, and
     Eddington.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

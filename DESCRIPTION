@@ -1,16 +1,20 @@
 Package: ariaster
 Type: Package
-Title: What the Package Does (Title Case)
+Title: ariaster: Color Palettes Inspired by Ari Aster
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Zack", "Horve",
+      email = "znhorve21@gmail.com",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Description: A collection of color palettes inspired by the visual aesthetic 
+    of Ari Aster's films, for use in data visualization. This package is 
+    built upon the structure and framework of the wesanderson package 
+    (Karthik Ram, Hadley Wickham), adapted with original palettes derived 
+    from the cinematography of Hereditary, Midsommar, Beau Is Afraid, and
+    Eddington.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true

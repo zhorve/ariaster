@@ -193,4 +193,6 @@ test_palette <- function(name, n) {
   invisible(pal)
 }
 
-registerS3method("print", "palette", print.palette)
+.onLoad <- function(libname, pkgname) {
+  registerS3method("print", "palette", print.palette)
+}

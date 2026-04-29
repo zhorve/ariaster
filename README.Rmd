@@ -29,7 +29,7 @@ devtools::install_github("yourusername/aripalettes")
 ## Usage
 
 ```{r palettes_dummy}
-library("aripalettes")
+library("ariaster")
 
 # See all palettes
 names(ari_palettes)

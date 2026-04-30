@@ -14,7 +14,7 @@ ari_palettes <- list(
   Midsommar3 = c("#766FA6", "#8594A9", "#4F686B", "#AD8A2A", "#C1BCB2"),
   Midsommar4 = c("#4679A6", "#BFCDD0", "#86816B", "#AA7C6C", "#36312D"),
 
-  Beau1 = c("#A5120F", "#F27405", "#D6B575", "#4C7AAD", "#0B0560"),
+  Beau1 = c("#0B0560", "#4C7AAD", "#D6B575", "#F27405", "#A5120F"),
   Beau2 = c("#BDD3E0", "#324001", "#808C23", "#B8BF7E", "#D92B04"),
   Beau3 = c("#9B2E35", "#387148", "#114C89", "#CAB851", "#8B4928"),
   BeauMonster = c("#F2EB85", "#625125", "#D9C0BA", "#402A2D", "#0D0D0D"),

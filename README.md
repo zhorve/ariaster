@@ -10,7 +10,7 @@ Afraid*, and *Eddington*.
 
 ``` r
 # Development version
-devtools::install_github("yourusername/aripalettes")
+devtools::install_github("zhorve/aripalettes")
 ```
 
 ## Usage
@@ -137,7 +137,7 @@ image(volcano, col = pal)
 ![](figure/volcano-1.png)
 
 ``` r
-pal <- ari_palette("Eddington2", 21, type = "continuous")
+pal <- ari_palette("Eddington1", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
@@ -155,7 +155,7 @@ test_palette("Midsommar1")
 ![](figure/test_hereditary2-1.png)
 
 ``` r
-test_palette("Hereditary4")
+test_palette("Eddington3")
 ```
 
 ![](figure/test_midsommar1-1.png)

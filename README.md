@@ -130,14 +130,14 @@ ari_palette("Eddington3")
 Any palette can be interpolated to generate as many colors as you need:
 
 ``` r
-pal <- ari_palette("Hereditary3", 21, type = "continuous")
+pal <- ari_palette("Beau1", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
 ![](figure/volcano-1.png)
 
 ``` r
-pal <- ari_palette("Midsommar2", 21, type = "continuous")
+pal <- ari_palette("Eddington2", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
@@ -149,19 +149,19 @@ The `test_palette()` function shows a palette across four chart types —
 useful for checking how colors hold up in real use.
 
 ``` r
-test_palette("Hereditary2")
+test_palette("Midsommar1")
 ```
 
 ![](figure/test_hereditary2-1.png)
 
 ``` r
-test_palette("Midsommar1")
+test_palette("Hereditary4")
 ```
 
 ![](figure/test_midsommar1-1.png)
 
 ``` r
-test_palette("Eddington1")
+test_palette("Beau3")
 ```
 
 ![](figure/test_eddington1-1.png)

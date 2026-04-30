@@ -42,7 +42,7 @@ ari_palettes <- list(
 #' @export
 #' @keywords colors
 #' @examples
-#' ari_palette("Heriditary1")
+#' ari_palette("Hereditary1")
 #' ari_palette("Midsommar2")
 #' ari_palette("Beau3")
 #' ari_palette("Midsommar1", 3)
@@ -50,7 +50,7 @@ ari_palettes <- list(
 #' # If you need more colours than normally found in a palette, you
 #' # can use a continuous palette to interpolate between existing
 #' # colours
-#' pal <- ari_palette(21, name = "Heriditary2", type = "continuous")
+#' pal <- ari_palette(21, name = "Hereditary2", type = "continuous")
 #' image(volcano, col = pal)
 ari_palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
@@ -75,9 +75,10 @@ ari_palette <- function(name, n, type = c("discrete", "continuous")) {
   structure(out, class = "palette", name = name)
 }
 
-#' @export
+#' @keywords internal
 #' @importFrom graphics rect par image text
 #' @importFrom grDevices rgb
+#' @export
 print.palette <- function(x, ...) {
   n <- length(x)
   old <- par(mar = c(0.5, 0.5, 0.5, 0.5))
@@ -96,6 +97,9 @@ print.palette <- function(x, ...) {
 #' looks across common chart types: a heatmap, pie chart, scatterplot
 #' (colored by category), and a paired boxplot.
 #'
+#' @importFrom grDevices rgb colorRampPalette
+#' @importFrom graphics par image rect text abline boxplot legend pie
+#' @importFrom stats rnorm
 #' @param name Name of desired palette from \code{\link{ari_palettes}}.
 #' @param n Number of colors to use. If omitted, uses all colors in the palette.
 #'
@@ -104,7 +108,7 @@ print.palette <- function(x, ...) {
 #' @export
 #' @examples
 #' test_palette("Midsommar1")
-#' test_palette("Heriditary2", n = 4)
+#' test_palette("Hereditary2", n = 4)
 test_palette <- function(name, n) {
 
   # --- Build palette ---
@@ -130,7 +134,7 @@ test_palette <- function(name, n) {
     col  = heat_colors,
     xaxt = "n", yaxt = "n",
     xlab = "", ylab = "",
-    main = paste0(name, " — Heatmap")
+    main = paste0(name, " - Heatmap")
   )
 
   # ---- 2. Pie chart ----
@@ -140,7 +144,7 @@ test_palette <- function(name, n) {
     pie_vals,
     labels = pie_labels,
     col    = pal,
-    main   = paste0(name, " — Pie Chart"),
+    main   = paste0(name, " - Pie Chart"),
     border = "white"
   )
 
@@ -154,7 +158,7 @@ test_palette <- function(name, n) {
     col  = pal[cats],
     pch  = 19,
     xlab = "X", ylab = "Y",
-    main = paste0(name, " — Scatterplot"),
+    main = paste0(name, " - Scatterplot"),
     bty  = "l"
   )
   legend(
@@ -181,7 +185,7 @@ test_palette <- function(name, n) {
     box_data,
     col    = box_cols,
     border = "#333333",
-    main   = paste0(name, " — Boxplot"),
+    main   = paste0(name, " - Boxplot"),
     xlab   = "Group", ylab   = "Value",
     bty    = "l",
     names  = names(box_data)

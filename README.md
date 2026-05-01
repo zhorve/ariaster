@@ -14,7 +14,7 @@ Ram, Hadley Wickham), adapted with original palettes.
 
 ``` r
 # Development version
-devtools::install_github("zhorve/aripalettes")
+devtools::install_github("zhorve/ariaster")
 ```
 
 ## Usage

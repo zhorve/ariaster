@@ -1,6 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ariaster: Color palettes for Data Visualization
+# ariaster: Color Palettes for Data Visualization
 
 Color palettes inspired by the films of Ari Aster. Each palette is drawn
 from the distinct visual language of *Hereditary*, *Midsommar*, *Beau Is
